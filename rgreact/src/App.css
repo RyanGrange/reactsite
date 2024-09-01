@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  padding: 2rem;
+}
+
+.greetings {
+  padding: 4rem;
+  font: 1.5rem bold Arial, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.visitorip {
+  display: inline-block;
+  padding: 2rem 0;
+}
