@@ -28,7 +28,6 @@ services:
     entrypoint: zsh -c "while sleep 1000; do :; done"
     ports:
       - 3000/tcp
-      - 5173/tcp
 
 volumes:
   node_modules:
