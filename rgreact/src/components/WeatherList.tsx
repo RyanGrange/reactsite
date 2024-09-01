@@ -10,6 +10,10 @@ function WeatherList() {
     "Bangor",
     "San Francisco",
     "New York City",
+    "Miami",
+    "Houston",
+    "Chicago",
+    "Cleveland" // Rocks!
   ];
 
   const [selectedLocationIndex, setSelectedLocationIndex] = useState(-1);
