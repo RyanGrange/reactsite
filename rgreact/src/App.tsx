@@ -1,14 +1,21 @@
 import "./App.css";
-import VisitorInfo from "./components/VisitorInfo";
-import WeatherList from "./components/WeatherList";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import Home from "./components/Pages/Home";
+import NotFound from "./components/Pages/NotFound";
+import WeatherReports from "./components/Pages/WeatherReport";
+//import Footer from "./components/Layout/Footer";
 
-function App() {
+export default function App() {
   return (
-    <>
-      <VisitorInfo />
-      <WeatherList />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="weather" element={<WeatherReports />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

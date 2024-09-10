@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 
-function VisitorIp() {
+export default function VisitorIp() {
   const [ipAddress, setIpAddress] = useState('0.0.0.0');
 
   useEffect(() => {
@@ -12,7 +12,7 @@ function VisitorIp() {
       })
       .catch((err) => {
         console.log(err.message);
-        setIpAddress('I\'m merribly sorry. There was an error retrieving your IP address.');
+        setIpAddress('I\'m terribly sorry. There was an error retrieving your IP address.');
       });
   }, []);
 
@@ -20,5 +20,3 @@ function VisitorIp() {
     <span className="visitorip">{ipAddress}</span>
   );
 }
-
-export default VisitorIp;

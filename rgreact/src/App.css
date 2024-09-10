@@ -14,3 +14,13 @@
   display: inline-block;
   padding: 2rem 0;
 }
+
+Footer {
+  position: fixed;
+  background-color: lightskyblue;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  text-align: center;
+}
